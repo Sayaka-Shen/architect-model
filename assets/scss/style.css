@@ -1,0 +1,374 @@
+@font-face {
+  font-family: "Segoeui";
+  src: url("../fonts/SEGOEUI.TTF");
+}
+* {
+  font-family: "Segoeui", sans-serif;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+Header .navBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+  position: fixed;
+  width: 100%;
+  background-color: #fff;
+  z-index: 3;
+}
+Header .navBar #brand {
+  margin-left: 2rem;
+  font-size: 1rem;
+  font-weight: 100;
+  letter-spacing: 0.2rem;
+}
+Header .navBar #brand span {
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+}
+Header .navBar ul {
+  display: flex;
+  font-size: 0.9rem;
+  letter-spacing: 0.2rem;
+  margin-right: 2rem;
+}
+Header .navBar ul li {
+  padding: 1rem;
+  cursor: pointer;
+}
+@media (max-width: 576px) {
+  Header .navBar ul {
+    display: none;
+  }
+}
+
+.imgHeader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../img/architect.jpg);
+  height: 85vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: 0 1rem;
+}
+@media (max-width: 576px) {
+  .imgHeader {
+    height: 35vh;
+    margin: 0;
+  }
+}
+@media (max-width: 768px) {
+  .imgHeader {
+    height: 55vh;
+    margin: 0;
+  }
+}
+.imgHeader h1 {
+  font-size: 2.5rem;
+  font-weight: 100;
+  letter-spacing: 0.3rem;
+  color: white;
+}
+.imgHeader h1 .BR {
+  margin: auto 0.2rem;
+  padding: 0.5rem 1.2rem;
+  background-color: rgba(0, 0, 0, 0.65);
+  color: white;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 0.2rem;
+}
+@media (max-width: 576px) {
+  .imgHeader h1 .BR {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 576px) {
+  .imgHeader h1 .architect {
+    display: none;
+  }
+}
+
+#projects {
+  width: 100%;
+  margin: 2rem auto;
+}
+#projects h2 {
+  margin: 4rem 2.5rem 2rem 2.5rem;
+}
+@media (max-width: 576px) {
+  #projects h2 {
+    margin-left: 3.5rem;
+  }
+}
+@media (max-width: 768px) {
+  #projects h2 {
+    margin-left: 2rem;
+  }
+}
+#projects .gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 95%;
+  margin: auto;
+}
+@media (max-width: 768px) {
+  #projects .gallery {
+    width: 90%;
+  }
+}
+#projects .gallery .imgFrame {
+  display: flex;
+  position: relative;
+  width: 24%;
+  margin-bottom: 0.9rem;
+  overflow: hidden;
+}
+@media (max-width: 768px) {
+  #projects .gallery .imgFrame {
+    width: 49%;
+  }
+}
+@media (max-width: 576px) {
+  #projects .gallery .imgFrame {
+    width: 90%;
+    margin: 0 auto 0.9rem auto;
+  }
+}
+#projects .gallery .imgFrame img {
+  width: 100%;
+  transition: all 0.2s ease-in-out;
+}
+#projects .gallery .imgFrame img:hover {
+  transform: scale(1.09);
+  filter: brightness(65%);
+}
+#projects .gallery .imgFrame p {
+  color: white;
+  background-color: black;
+  position: absolute;
+  padding: 0.7rem 0.9rem;
+}
+
+#about {
+  width: 100%;
+  margin: 2rem auto;
+}
+#about h2 {
+  margin: 4rem auto 2rem 2.5rem;
+}
+@media (max-width: 576px) {
+  #about h2 {
+    margin-left: 2.5rem;
+  }
+}
+#about p {
+  margin: 2rem 2.5rem 2rem 2.5rem;
+  text-align: left;
+}
+@media (max-width: 576px) {
+  #about p {
+    margin-left: 2.5rem;
+  }
+}
+#about .profiles {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 95%;
+  margin: auto;
+}
+@media (max-width: 768px) {
+  #about .profiles {
+    width: 90%;
+  }
+}
+@media (max-width: 576px) {
+  #about .profiles {
+    width: 85%;
+  }
+}
+#about .profiles .profile {
+  width: 24%;
+}
+@media (max-width: 768px) {
+  #about .profiles .profile {
+    width: 48%;
+    margin-bottom: 2rem;
+  }
+}
+@media (max-width: 576px) {
+  #about .profiles .profile {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+}
+#about .profiles .profile h2 {
+  margin: 0.8rem 0;
+  font-size: 1.5rem;
+}
+#about .profiles .profile h3 {
+  margin: 0.8rem 0;
+  color: grey;
+  font-size: 1.1rem;
+  font-weight: 100;
+}
+#about .profiles .profile p {
+  margin: 0.8rem 0;
+  text-align: justify;
+}
+#about .profiles .profile img {
+  width: 100%;
+  filter: grayscale(70%);
+  transition: all 1s ease-in-out;
+}
+#about .profiles .profile img:hover {
+  filter: grayscale(0);
+}
+#about .profiles .profile button {
+  border: none;
+  width: 100%;
+  padding: 0.9rem 1rem;
+  background-color: rgb(218, 218, 218);
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+#contact {
+  width: 100%;
+  margin: 2rem auto;
+}
+#contact h2 {
+  margin: 4rem auto 2rem 2.5rem;
+  font-weight: 100;
+}
+@media (max-width: 576px) {
+  #contact h2 {
+    margin-left: 2rem;
+  }
+}
+@media (max-width: 768px) {
+  #contact h2 {
+    margin-left: 2rem;
+  }
+}
+#contact p {
+  margin: 2rem auto 2rem 2.5rem;
+  font-size: 1.1rem;
+}
+@media (max-width: 576px) {
+  #contact p {
+    font-size: 1.2rem;
+    margin-left: 2rem;
+  }
+}
+@media (max-width: 768px) {
+  #contact p {
+    margin-left: 2rem;
+  }
+}
+#contact form {
+  width: 95%;
+  margin: auto;
+}
+@media (max-width: 576px) {
+  #contact form {
+    width: 85%;
+  }
+}
+@media (max-width: 768px) {
+  #contact form {
+    width: 90%;
+  }
+}
+#contact form div {
+  margin: 1.5rem 0;
+}
+#contact form div input {
+  width: 98%;
+  padding: 0.8rem;
+  border: gray 1px solid;
+  font-size: 1.2rem;
+}
+@media (max-width: 576px) {
+  #contact form div input {
+    width: 90%;
+  }
+}
+@media (max-width: 768px) {
+  #contact form div input {
+    width: 95%;
+  }
+}
+#contact form div input[type=submit] {
+  width: 14%;
+  margin: 1.3rem 0;
+  background-color: black;
+  color: white;
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+@media (max-width: 576px) {
+  #contact form div input[type=submit] {
+    width: auto;
+  }
+}
+@media (max-width: 768px) {
+  #contact form div input[type=submit] {
+    width: auto;
+  }
+}
+
+#map {
+  width: 95%;
+  margin: 0 auto;
+}
+@media (max-width: 768px) {
+  #map {
+    width: 90%;
+  }
+}
+#map iframe {
+  width: 100%;
+  height: 80vh;
+}
+@media (max-width: 768px) {
+  #map iframe {
+    height: 55vh;
+  }
+}
+@media (max-width: 576px) {
+  #map iframe {
+    height: 35vh;
+  }
+}
+
+Footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  height: 25vh;
+  margin-top: 3rem;
+}
+@media (max-width: 768px) {
+  Footer {
+    margin-top: 1rem;
+  }
+}
+@media (max-width: 576px) {
+  Footer {
+    margin-top: 1rem;
+  }
+}
+Footer div {
+  color: white;
+  font-size: 1.5rem;
+}/*# sourceMappingURL=style.css.map */
