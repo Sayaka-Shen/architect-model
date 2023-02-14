@@ -6,5 +6,5 @@ the market of architecture. The website represents the company and their workers
 ## Language Used
 
 - HTML
-- CSS
+- SCSS(CSS)
 - Javascript
